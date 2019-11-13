@@ -1,0 +1,97 @@
+.b-main {
+  background-image: url("../img/bg-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  padding-bottom: vie(30, xl);
+
+  &__icon {
+    width: vie(74, xl);
+  }
+
+  &__product-wrap {
+    padding-top: vie(40, xl);
+    width: vie(400, xl);
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  &__product-list {
+    display: flex;
+    margin-bottom: vie(69, xl);
+    justify-content: space-between;
+  }
+
+  &__product-item {
+    width: vie(100, xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__product-features {
+    margin-top: 2px;
+    white-space: wrap;
+    font-family: $geb;
+    font-size: vie(18, xl);
+    color: $accent;
+  }
+
+  &__product-photo-wrap {
+    width: 100%;
+    text-align: right;
+  }
+
+  &__product-photo {
+    object-fit: contain;
+  }
+
+  &__product-title {
+    font-size: vie(13, xl);
+    color: $blueLight;
+  }
+
+  &__text-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: vie(55, xl);
+  }
+
+  &__link-wrap {
+    display: flex;
+    align-items: center;
+    max-width: vie(340, xl);
+  }
+
+  &__link {
+    display: block;
+    font-family: $gsb;
+    font-size: vie(24, xl);
+    color: $blueBolder;
+    text-decoration: underline;
+    margin-left: vie(27, xl);
+  }
+
+  &__fact {
+    max-width: vie(695, xl);
+    margin-left: auto;
+    margin-right: vie(35, xl);
+  }
+
+  &__fact-title {
+    font-family: $gb;
+    font-size: vie(32, xl);
+    line-height: vie(36, xl);
+    margin-bottom: vie(20, xl);
+    color: $blueBolder;
+  }
+
+  &__fact-descr {
+    font-size: vie(18, xl);
+    color: $blueBolder;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,33 @@
+.b-test {
+  padding-top: vie(70, xl);
+  padding-bottom: vie(130, xl);
+  background-image: url("../img/bg-2.png");
+  background-repeat: no-repeat;
+  background-position: 35vw bottom;
+  background-size: contain;
+
+  &__content {
+    margin-left: vie(80, xl);
+  }
+
+  &__icon {
+    margin-bottom: vie(36, xl);
+  }
+
+  &__title {
+    font-family: $gsb;
+    font-size: vie(34, xl);
+    color: #0b4c98;
+    font-weight: 400;
+    max-width: vie(250, xl);
+    margin-bottom: vie(25, xl);
+  }
+
+  &__descr {
+    font-size: vie(24, xl);
+    color: #000;
+    font-weight: 400;
+    margin-bottom: vie(80, xl);
+    max-width: vie(340, xl);
+  }
+}
