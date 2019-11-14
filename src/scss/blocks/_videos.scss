@@ -6,30 +6,59 @@
   padding-top: vie(40, xl);
   padding-bottom: vie(40, xl);
 
+  @include media(xs) {
+    padding-top: vie(21, xs);
+    padding-bottom: vie(42, xs);
+  }
+
   &__title {
     text-align: center;
     font-size: vie(34, xl);
     color: #fff;
     font-weight: 400;
     margin-bottom: vie(40, xl);
+
+    @include media(xs) {
+      font-size: vie(22, xs);
+      margin-bottom: vie(24, xs);
+    }
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include media(xs) {
+      flex-direction: column;
+    }
   }
 
   &__video-wrap {
     min-width: vie(620, xl);
     width: vie(620, xl);
     margin-right: vie(20, xl);
+
+    @include media(xs) {
+      width: 100%;
+      min-width: 1vw;
+      margin-right: 0;
+      margin-bottom: vie(24, xs);
+    }
+
   }
 
   &__group {
     min-width: vie(520, xl);
     width: vie(520, xl);
+    flex-direction: row;
     display: flex;
     flex-wrap: wrap;
+
+    @include media(xs) {
+      flex-direction: column;
+      width: 100%;
+      min-width: 1vw;
+    }
   }
 
   &__poster {
@@ -40,18 +69,41 @@
     &:hover {
       opacity: 0.7;
     }
+
+  }
+
+  &__poster-wrap {
+    width: 47%;
+    @include media(xs) {
+      width: 100%;
+      margin-bottom: vie(24, xs);
+      min-height: 230px;
+    }
   }
 
   &__poster--min {
-    width: 47%;
+
     height: vie(200, xl);
     margin-right: vie(15, xl);
+
+    @include media(xs) {
+      width: 100%;
+      height: vie(176, xs);
+    }
   }
+
+
 
   &__descr--min{
     font-size: vie(16, xl);
     color: #fff;
     margin-top: vie(8, xl);
+    display: block;
+
+    @include media(xs) {
+      font-size: vie(19, xs);
+      line-height: vie(22, xs);
+    }
   }
 
   &__poster-img {
@@ -63,6 +115,13 @@
     color: #fff;
     font-weight: 300;
     margin-top: vie(15, xl);
+    max-width: 442px;
+    display: block;
+
+    @include media(xs) {
+      font-size: vie(19, xs);
+      line-height: vie(22, xs);
+    }
   }
 
   &__poster-img-wrap {
@@ -81,6 +140,18 @@
       font-size: vie(15, xl);
       left: vie(10, xl);
       top: vie(12, xl);
+
+      @include media(xs) {
+        font-size: vie(18, xs);
+        top: vie(16, xs);
+        left: vie(12, xs);
+      }
+    }
+
+    @include media(xs) {
+      font-size: vie(18, xs);
+      top: vie(16, xs);
+      left: vie(12, xs);
     }
   }
 
@@ -92,17 +163,32 @@
 
     &--big {
       width: vie(48, xl);
+      @include media(xs) {
+        width: vie(35, xs);
+        bottom: vie(20, xs);
+        left: vie(14, xs);
+      }
     }
 
     &--min {
       width: vie(28, xl);
       bottom: vie(16, xl);
       left: vie(12, xl);
+
+      @include media(xs) {
+        width: vie(35, xs);
+        bottom: vie(20, xs);
+        left: vie(14, xs);
+      }
     }
   }
 
   &__button {
     margin-top: vie(12, xl);
     @include trs();
+
+    @include media(xs) {
+      display: none;
+    }
   }
 }

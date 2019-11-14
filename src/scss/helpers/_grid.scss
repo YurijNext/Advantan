@@ -12,4 +12,8 @@
   @include media(sm) {
     padding: 0 8%;
   }
+
+  @include media(xs) {
+    padding: 0 vie(25, xs);
+  }
 }

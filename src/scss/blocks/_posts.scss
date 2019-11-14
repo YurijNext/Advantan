@@ -3,32 +3,56 @@
   padding-top: vie(30, xl);
   padding-bottom: vie(42, xl);
 
+  @include media(xs) {
+    padding-top: vie(24, xl);
+    padding-bottom: vie(49, xl);
+  }
+
   &__title {
     font-size: vie(34, xl);
     color: #fff;
     font-weight: 400;
     text-align: center;
     margin-bottom: vie(35, xl);
+
+    @include media(xs) {
+      font-size: vie(28, xs);
+      margin-bottom: vie(25, xs);
+    }
   }
 
   &__wrap {
     display: flex;
     justify-content: center;
+
+    @include media(xs) {
+      flex-direction: column;
+    }
   }
 
   &__post-wrap {
     width: 50%;
     margin-right: vie(20, xl);
+
+    @include media(xs) {
+      width: 100%;
+      margin-bottom: vie(34, xs);
+    }
   }
 
   &__article-title {
     max-width: 570px;
     margin: 0 auto;
+
   }
 
   &__btn-wrap {
     max-width: 570px;
     margin: 0 auto;
+
+    @include media(xs) {
+      display: none;
+    }
   }
 
   &__article-img {
@@ -46,10 +70,21 @@
     }
   }
 
+  &__poster-link {
+    text-decoration: none;
+    @include media(xs) {
+      text-decoration: none;
+    }
+  }
+
   &__article-title {
     font-size: vie(26, xl);
     color: #fff;
     margin-top: vie(10, xl);
     margin-bottom: vie(35, xl);
+
+    @include media(xs) {
+      font-size: vie(22, xs);
+    }
   }
 }

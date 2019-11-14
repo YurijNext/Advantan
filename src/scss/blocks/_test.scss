@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: 35vw bottom;
   background-size: contain;
+  @include media(xs) {
+    padding-top: vie(28, xs);
+    padding-bottom: vie(28, xs);
+  }
 
   &__content {
     margin-left: vie(80, xl);
@@ -12,6 +16,10 @@
 
   &__icon {
     margin-bottom: vie(36, xl);
+
+    @include media(xs) {
+      width: vie(50, xs);
+    }
   }
 
   &__title {
@@ -21,6 +29,12 @@
     font-weight: 400;
     max-width: vie(250, xl);
     margin-bottom: vie(25, xl);
+
+    @include media(xs) {
+      font-size: vie(30, xs);
+      max-width: vie(230, xs);
+      margin-bottom: vie(17, xs);
+    }
   }
 
   &__descr {
@@ -29,5 +43,25 @@
     font-weight: 400;
     margin-bottom: vie(80, xl);
     max-width: vie(340, xl);
+
+    @include media(xs) {
+      font-size: vie(16, xs);
+      max-width: vie(140, xs);
+    }
+  }
+
+  &__button {
+    @include media(xs) {
+      margin-top: vie(170, xs);
+      width: 100%;
+      box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.17);
+    }
+  }
+
+  &__button-content {
+    @include media(xs) {
+      font-size: vie(20, xs);
+      font-weight: 400;
+    }
   }
 }

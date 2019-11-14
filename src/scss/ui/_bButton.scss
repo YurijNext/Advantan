@@ -32,6 +32,7 @@
   box-shadow: 5px 6px 1px rgba(0, 0, 0, 0.11);
   opacity: 1;
   border-radius: 8px;
+  cursor: pointer;
   @include trs();
   &-content {
     font-size: vie(28, xl);

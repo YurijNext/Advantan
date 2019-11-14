@@ -6,20 +6,31 @@
   position: relative;
   background: linear-gradient(to right, #1e5da4 0%,#009cca 50%);
   height: vie(70, xl);
+  @include media(xs) {
+    height: vie(55, xs);
+  }
 
   &__wrap {
     display: flex;
     align-items: center;
     height: 100%;
+    justify-content: center;
   }
 
   &__logo {
     width: vie(190, xl);
     margin-right: vie(176, xl);
+    @include media(xs) {
+      width: vie(162, xs);
+      margin-right: 0;
+    }
   }
 
   &__nav {
     height: 100%;
+    @include media(xs) {
+      display: none;
+    }
   }
 
   &__nav-list {
@@ -58,6 +69,9 @@
     margin-left: auto;
     position: relative;
     z-index: 3;
+    @include media(xs) {
+      display: none;
+    }
   }
 
   &__socials-list {
@@ -89,5 +103,61 @@
     height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
     z-index: 1;
+
+    @include media(xs) {
+      display: none;
+    }
   }
+
+  &__humburger {
+    cursor: pointer;
+    @include media(xs, min) {
+      display: none;
+    }
+
+    @include media(xs) {
+      display: block;
+      position: absolute;
+      right: 0;
+      height: 100%;
+
+    }
+  }
+
+  &__humburger-box {
+    width: vie(22, xs);
+    height: vie(12, xs);
+  }
+
+  &__humburger-inner {
+    background-color: #fff;
+    width: vie(22, xs);
+    height: vie(2, xs);
+    &:after, &:before {
+      background-color: #fff;
+      width: vie(22, xs);
+      height: vie(2, xs);
+    }
+
+    &:before {
+      top: -5px;
+    }
+
+    &:after {
+      bottom: -5px;
+    }
+  }
+}
+
+.header-hamburger--active {
+  background-color: #1857a0;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.hamburger.is-active:hover, .hamburger:hover {
+  opacity: 1;
 }

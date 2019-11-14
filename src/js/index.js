@@ -24,7 +24,36 @@ $(document).ready(function () {
         });
       }
     }
+
+    $('.b-header__nav-link').not(this).removeClass('b-header__nav-link--active');
+    $(this).addClass('b-header__nav-link--active');
   });
-const c = 6;
-  console.log(c);
+
+  /**Mobile menu**/
+  let mobileMenu = (function() {
+    const openBtn = $('.hamburger'),
+          menu = $('.mobile-menu');
+
+    openBtn.on('click', function(e) {
+      e.preventDefault();
+
+      openBtn.toggleClass('hamburger--collapse is-active header-hamburger--active');
+      menu.toggleClass('mobile-menu--active');
+    });
+
+
+  })();
+
+  var mySwiper = new Swiper ('.slider-popup__container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    swipe: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+  });
+
 });
