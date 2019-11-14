@@ -4,7 +4,8 @@
 
   &__text {
     width: 100%;
-    font-family: $arial;
+    font-family: "Arial Regular", sans-serif;
+    white-space: pre-wrap;
     color: #e0e0e0;
     font-size: vie(59, xl);
     text-transform: uppercase;

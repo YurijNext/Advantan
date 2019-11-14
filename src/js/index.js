@@ -32,14 +32,23 @@ $(document).ready(function () {
   /**Mobile menu**/
   let mobileMenu = (function() {
     const openBtn = $('.hamburger'),
-          menu = $('.mobile-menu');
+          menu = $('.mobile-menu'),
+          link = $('.mobile-menu__link');
+
+    function toggleMenu() {
+      openBtn.toggleClass('hamburger--collapse is-active header-hamburger--active');
+      menu.toggleClass('mobile-menu--active');
+    }
 
     openBtn.on('click', function(e) {
       e.preventDefault();
-
-      openBtn.toggleClass('hamburger--collapse is-active header-hamburger--active');
-      menu.toggleClass('mobile-menu--active');
+      toggleMenu();
     });
+
+    link.on('click', function(e) {
+      e.preventDefault();
+      toggleMenu();
+    })
 
 
   })();
