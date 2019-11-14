@@ -3,8 +3,8 @@
   width: 100%;
   height: 100%;
   z-index: 3;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   &__wrap {
     position: fixed;
     top: 50%;
@@ -19,4 +19,52 @@
     width: 100%;
     height: 100%;
   }
+
+  &__slide {
+    padding-top: vie(80, xl);
+  }
+
+  &__button {
+    position: relative;
+    z-index: 20;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    top: 0;
+  }
+
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.bullet-passed {
+  background-color: red;
+}
+
+.question {
+  position: absolute;
+  min-height: vie(100, xl);
+  width: 100%;
+  background-color: blue;
+  top: 0;
+  text-align: center;
+}
+
+.question-h2 {
+  padding-top: vie(40,xl);
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  display: none;
+}
+
+.box-active {
+  display: block;
 }

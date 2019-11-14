@@ -49,6 +49,21 @@ $(document).ready(function () {
       e.preventDefault();
       toggleMenu();
     })
+  })();
+
+  const test = (function() {
+    const swiperPag = $('.swiper-pagination-bullet'),
+          modal = $('.slider-popup');
+
+    // modal.on('click', function() {
+    //   $('.swiper-pagination-bullet-active').addClass('bullet-passed');
+    //
+    // });
+
+    $('.true').on('click', function() {
+      $('.box').addClass('box-active');
+      $('.swiper-pagination-bullet-active').addClass('bullet-passed');
+    });
 
 
   })();
