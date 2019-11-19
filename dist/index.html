@@ -23,37 +23,31 @@
       </div>
     </div>
   </div>
-  <div class="slider-popup">
+  <div class="test-popup">
     <div class="overlay"></div>
-    <div class="slider-popup__wrap">
-      <div class="swiper-container slider-popup__container">
-        <div class="swiper-pagination"></div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slider-popup__slide">
-            <div class="question">
-              <h2 class="question-h2">как дела?</h2>
-              <button class="slider-popup__button"><span class="slider-popup__button-content false">Не правильно</span></button>
-              <button class="slider-popup__button"><span class="slider-popup__button-content true">Правильно</span></button>
-              <div class="box"></div>
-            </div>
-          </div>
-          <div class="swiper-slide slider-popup__slide">
-            <div class="question">
-              <h2 class="question-h2">как дела?</h2>
-            </div>
-          </div>
-          <div class="swiper-slide slider-popup__slide">
-            <div class="question">
-              <h2 class="question-h2">как дела?</h2>
-            </div>
-          </div>
-          <div class="swiper-slide slider-popup__slide">4</div>
-          <div class="swiper-slide slider-popup__slide">5</div>
-          <div class="swiper-slide slider-popup__slide">6</div>
-          <div class="swiper-slide slider-popup__slide">7</div>
-          <div class="swiper-slide slider-popup__slide">8</div>
-          <div class="swiper-slide slider-popup__slide">9</div>
-          <div class="swiper-slide slider-popup__slide">10</div>
+    <div class="test-popup__wrap">
+      <button class="test-popup__close popup-close" type="button">Закрыть</button>
+      <header class="test-popup__header">
+        <ul class="test-popup__dots js-dots-list"></ul>
+        <div class="question-container">
+          <div class="test-popup__qustion js-q-wrap"></div>
+        </div>
+      </header>
+      <div class="test-popup__content">
+        <div class="test-popup__image-wrap js-cnt-wrap"></div>
+        <div class="test-popup__buttons">
+          <button class="test-popup__button js-ans-btn" type="button" data-status="false"><span class="test-popup__button-content">Ложь</span></button>
+          <button class="test-popup__button js-ans-btn" type="button" data-status="true"><span class="test-popup__button-content">Правда</span></button>
+        </div>
+        <div class="test-popup__btn-wrap">
+          <button class="test-popup__reply" type="button"><span class="test-popup__reply-content">Ответить</span></button>
+          <button class="test-popup__continue" type="button"><span class="test-popup__reply-content">Дальше</span></button>
+        </div>
+        <div class="test-socials"><span>Поделиться с друзьями</span>
+          <ul class="test-socials-list">
+            <li class="test-socials-item"><a class="test-socials-link" href="#"><img src="img/test/insta.png" alt="Icon"></a></li>
+            <li class="test-socials-item"><a class="test-socials-link" href="#"><img src="img/test/vk.png" alt="Icon"></a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -127,13 +121,13 @@
           <div class="b-main__product-photo-wrap"><img class="b-main__product-photo" src="img/salve.png" alt="Salve photo"><span class="b-main__product-title">Адвантан® П  N013563/01, П N013563/02</span></div>
         </div>
         <div class="b-main__text-wrap">
-          <div class="b-main__link-wrap"><img class="b-main__link-icon b-main__icon" src="img/play.png" alt="Play video icon"><a class="b-main__link" href="#">Смотреть видео <br> с Е. О. Комаровским</a></div>
+          <div class="b-main__link-wrap"><img class="b-main__link-icon b-main__icon" src="img/play.png" alt="Play video icon"><a class="b-main__link show-video-popup" href="#">Смотреть видео <br> с Е. О. Комаровским</a></div>
           <div class="b-main__fact">
             <h2 class="b-main__fact-title">Атопический дерматит: лечится или нет?</h2>
             <p class="b-main__fact-descr">Атопический дерматит - очень распространенное заболевание среди детей. Чтобы помочь справиться с неприятными симптомами, нужно знать о нем больше. О том, как это сделать, какие симптомы должны насторожить, - в нашем проекте.</p>
           </div>
         </div>
-        <div class="b-main__play-button"><img class="b-main__link-icon b-main__play-button-icon" src="img/play.png" alt="Play video icon"><a class="b-main__link b-main__play-button-link" href="#">Смотреть видео <br> с Е. О. Комаровским</a></div>
+        <div class="b-main__play-button"><img class="b-main__link-icon b-main__play-button-icon" src="img/play.png" alt="Play video icon"><a class="b-main__link b-main__play-button-link show-video-popup" href="#">Смотреть видео <br> с Е. О. Комаровским</a></div>
       </div>
     </section>
     <section class="b-videos" id="video">
@@ -141,7 +135,7 @@
         <h2 class="b-videos__title">Видео с Е. О. Комаровским</h2>
         <div class="b-videos__wrapper">
           <div class="b-videos__video-wrap">
-            <div class="b-videos__poster b-videos__poster--big">
+            <div class="b-videos__poster b-videos__poster--big" data-src="https://youtube.com/embed/6V0SrIslOsE">
               <div class="b-videos__poster-img-wrap">
                 <div class="b-videos__poster-number">№5</div><img class="b-videos__poster-img" src="img/video-img-1.jpg" alt="Video poster"><img class="b-videos__play-icon b-videos__play-icon--big" src="img/play-white.png" alt="Play icon">
               </div>
@@ -151,7 +145,7 @@
           </div>
           <div class="b-videos__group">
             <div class="b-videos__poster-wrap">
-              <div class="b-videos__poster b-videos__poster--min">
+              <div class="b-videos__poster b-videos__poster--min" data-src="https://youtube.com/embed/Ilp-J1HdJnA">
                 <div class="b-videos__poster-img-wrap">
                   <div class="b-videos__poster-number b-videos__poster-number--min">№4</div><img class="b-videos__poster-img" src="img/video-img-1.jpg" alt="Video poster"><img class="b-videos__play-icon b-videos__play-icon--min" src="img/play-white.png" alt="Play icon">
                 </div>
@@ -159,21 +153,21 @@
               </div>
             </div>
             <div class="b-videos__poster-wrap">
-              <div class="b-videos__poster b-videos__poster--min">
+              <div class="b-videos__poster b-videos__poster--min" data-src="https://youtube.com/embed/6V0SrIslOsE">
                 <div class="b-videos__poster-img-wrap">
                   <div class="b-videos__poster-number b-videos__poster-number--min">№3</div><img class="b-videos__poster-img" src="img/video-img-1.jpg" alt="Video poster"><img class="b-videos__play-icon b-videos__play-icon--min" src="img/play-white.png" alt="Play icon">
                 </div><span class="b-videos__descr b-videos__descr--min">Наружные гормональные препараты: что это такое и зачем они нужны?</span>
               </div>
             </div>
             <div class="b-videos__poster-wrap">
-              <div class="b-videos__poster b-videos__poster--min">
+              <div class="b-videos__poster b-videos__poster--min" data-src="https://youtube.com/embed/yWQ-0ptRBG4">
                 <div class="b-videos__poster-img-wrap">
                   <div class="b-videos__poster-number b-videos__poster-number--min">№2</div><img class="b-videos__poster-img" src="img/video-img-1.jpg" alt="Video poster"><img class="b-videos__play-icon b-videos__play-icon--min" src="img/play-white.png" alt="Play icon">
                 </div><span class="b-videos__descr b-videos__descr--min">Атопический и аллергический дерматиты: чем лечить?</span>
               </div>
             </div>
             <div class="b-videos__poster-wrap">
-              <div class="b-videos__poster b-videos__poster--min">
+              <div class="b-videos__poster b-videos__poster--min" data-src="https://youtube.com/embed/6V0SrIslOsE">
                 <div class="b-videos__poster-img-wrap">
                   <div class="b-videos__poster-number b-videos__poster-number--min">№1</div><img class="b-videos__poster-img" src="img/video-img-1.jpg" alt="Video poster"><img class="b-videos__play-icon b-videos__play-icon--min" src="img/play-white.png" alt="Play icon">
                 </div><span class="b-videos__descr b-videos__descr--min">Почему не надо бояться гормональных препаратов</span>
@@ -217,7 +211,7 @@
     </section>
     <section class="b-warning">
       <div class="container">
-        <p class="b-warning__text">Имеются противопоказания. Необходимо ознакомиться с инструкцией по применению или получить консультацию специалиста</p>
+        <div class="b-warning__wrap"><img class="b-warning__image" src="img/w-bg.jpg" alt="Warning"></div>
         <p class="b-warning__descr">Все претензии по содержанию данного промоционного материала, а также сообщения о нежелательныхявлениях направляются в ООО “ЛЕО Фармасьютикал Продактс” по адресу 125315 Россия, Москва, Ленинградский проспект 72, корпус 2 или по телефону +7 (495) 789 1160. <a href="#" class="privacy-policy">Политика конфиденциальности </a></p>
       </div>
     </section>
@@ -238,17 +232,17 @@
         <div class="b-footer__socials-wrap">
           <p class="b-footer__socials-text">Мы в социальных сетях:</p>
           <ul class="b-footer__socials">
-            <li class="b-footer__socials-item"><a class="b-footer__socials-link">1</a></li>
-            <li class="b-footer__socials-item"><a class="b-footer__socials-link">2</a></li>
-            <li class="b-footer__socials-item"><a class="b-footer__socials-link">3</a></li>
-            <li class="b-footer__socials-item"><a class="b-footer__socials-link">4</a></li>
-            <li class="b-footer__socials-item"><a class="b-footer__socials-link">5</a></li>
-            <li class="b-footer__socials-item"><a class="b-footer__socials-link">6</a></li>
+            <li class="b-footer__socials-item"><a class="b-footer__socials-link b-footer__k" href="#"></a></li>
+            <li class="b-footer__socials-item"><a class="b-footer__socials-link b-footer__vk" href="#"></a></li>
+            <li class="b-footer__socials-item"><a class="b-footer__socials-link b-footer__fs" href="#"></a></li>
+            <li class="b-footer__socials-item"><a class="b-footer__socials-link b-footer__yt" href="#"></a></li>
+            <li class="b-footer__socials-item"><a class="b-footer__socials-link b-footer__in" href="#"></a></li>
+            <li class="b-footer__socials-item"><a class="b-footer__socials-link b-footer__t" href="#"></a></li>
           </ul>
         </div>
         <div class="b-footer__text-right">
           <p class="b-footer__descr">Использование любых материалов сайта допустимо только при соблюдении <a href="#" class="b-footer__privacy"> соглашения об использовании сайта</a> и с письменного разрешения <a href="#" class="b-footer__privacy"">Администрации</a></p>
-          <p class="b-footer__descr">Юридическуб защиту обеспечивает Адвокатское бюро "Бурлаков и партнеры"</p>
+          <p class="b-footer__descr">Юридическу защиту обеспечивает Адвокатское бюро "Бурлаков и партнеры"</p>
         </div>
       </div>
     </div>

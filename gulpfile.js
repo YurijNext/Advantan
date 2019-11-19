@@ -59,9 +59,6 @@ gulp.task('js', function () {
       'src/js/index.js', // Always at the end
     ])
     .pipe(sourcemaps.init())
-    .pipe(babel({
-      presets: ['@babel/preset-env']
-    }))
     .pipe(concat('scripts.min.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(sourcemaps.write('.'))

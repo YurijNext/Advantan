@@ -1,10 +1,9 @@
 .video-popup {
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 3;
+  display: none;
 
   &__substrate {
     position: fixed;
@@ -23,6 +22,11 @@
     left: 50%;
     top: vie(60, xl);
     transform: translateX(-50%);
+
+    @include media(xs) {
+      width: 80vw;
+      height: vie(200, xs);
+    }
   }
 
   &__video {

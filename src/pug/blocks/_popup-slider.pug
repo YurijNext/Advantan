@@ -1,28 +1,40 @@
-.slider-popup
+.test-popup
     .overlay
-    .slider-popup__wrap
-        .swiper-container.slider-popup__container
-            .swiper-pagination
-            .swiper-wrapper
-                .swiper-slide.slider-popup__slide
-                    .question
-                        h2.question-h2 как дела?
-                        button.slider-popup__button
-                            span.slider-popup__button-content.false Не правильно
-                        button.slider-popup__button
-                            span.slider-popup__button-content.true Правильно
+    .test-popup__wrap
+        button(type="button").test-popup__close.popup-close Закрыть
+        header.test-popup__header
+            ul.test-popup__dots.js-dots-list
 
-                        .box
-                .swiper-slide.slider-popup__slide
-                    .question
-                        h2.question-h2 как дела?
-                .swiper-slide.slider-popup__slide
-                    .question
-                        h2.question-h2 как дела?
-                .swiper-slide.slider-popup__slide 4
-                .swiper-slide.slider-popup__slide 5
-                .swiper-slide.slider-popup__slide 6
-                .swiper-slide.slider-popup__slide 7
-                .swiper-slide.slider-popup__slide 8
-                .swiper-slide.slider-popup__slide 9
-                .swiper-slide.slider-popup__slide 10
+            .question-container
+                .test-popup__qustion.js-q-wrap
+
+        .test-popup__content
+            .test-popup__image-wrap.js-cnt-wrap
+
+
+            .test-popup__buttons
+                button(type="button" data-status="false").test-popup__button.js-ans-btn
+                    span.test-popup__button-content Ложь
+                button(type="button" data-status="true").test-popup__button.js-ans-btn
+                    span.test-popup__button-content Правда
+
+            .test-popup__btn-wrap
+                button(type="button").test-popup__reply
+                    span.test-popup__reply-content Ответить
+                button(type="button").test-popup__continue
+                    span.test-popup__reply-content Дальше
+
+            .test-socials
+                span Поделиться с друзьями
+
+                ul.test-socials-list
+                    li.test-socials-item
+                        a(href="#").test-socials-link
+                            img(src="img/test/insta.png" alt="Icon")
+                    li.test-socials-item
+                        a(href="#").test-socials-link
+                            img(src="img/test/vk.png" alt="Icon")
+
+
+
+
