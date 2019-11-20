@@ -103,12 +103,19 @@
 
     @include media(sm) {
       width: 100%;
-      margin-bottom: vie(100, sm);
+      margin-bottom: 100px;
       min-height: 230px;
     }
+
+    @media only screen and (max-width: 480px) {
+      margin-bottom: 30px;
+    }
+
+
+
     @include media(xs) {
       width: 100%;
-      margin-bottom: vie(24, xs);
+      margin-bottom: 30px;
       min-height: 230px;
     }
   }

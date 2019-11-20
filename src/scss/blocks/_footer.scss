@@ -15,6 +15,11 @@
     font-size: vie(12, xl);
     color: #869299;
 
+    @include media(sm) {
+      margin-left: auto;
+      max-width: 100%;
+    }
+
     @include media(xs) {
       margin-left: auto;
       max-width: 100%;
@@ -34,6 +39,10 @@
     white-space: nowrap;
     @include trs();
 
+    @include media(sm) {
+      font-size: vie(12, sm);
+    }
+
     @include media(xs) {
       font-size: vie(10, xs);
     }
@@ -49,6 +58,12 @@
     height: 40px;
     background-color: #b7b7b7;
     position: relative;
+
+    @include media(sm) {
+      width: vie(15, sm);
+      height: vie(15, sm);
+      margin-left: vie(4, sm);
+    }
 
     @include media(xs) {
       width: vie(15, xs);
@@ -138,6 +153,10 @@
   &__text {
     display: flex;
 
+    @include media(sm) {
+      flex-wrap: wrap;
+    }
+
     @include media(xs) {
       flex-wrap: wrap;
     }
@@ -148,6 +167,10 @@
     color: #869299;
     max-width: vie(256, xl);
     margin-bottom: vie(30, xl);
+
+    @include media(sm) {
+      font-size: vie(12, sm);
+    }
 
     @include media(xs) {
       font-size: vie(8, xs);
@@ -160,6 +183,10 @@
     opacity: 1;
     text-decoration: none;
     @include trs();
+
+    @include media(sm) {
+      font-size: vie(12, sm);
+    }
 
     @include media(xs) {
       font-size: vie(8, xs);
@@ -177,6 +204,9 @@
     text-decoration: none;
     @include trs();
 
+    @include media(sm) {
+      font-size: vie(12, sm);
+    }
     @include media(xs) {
       font-size: vie(8, xs);
     }
@@ -202,6 +232,10 @@
 
   &__socials {
     display: flex;
+
+    @include media(sm) {
+      justify-content: flex-end;
+    }
     @include media(xs) {
       justify-content: flex-end;
     }
@@ -212,6 +246,10 @@
     display: block;
     margin-bottom: vie(15, xl);
 
+    @include media(sm) {
+      font-size: vie(12, sm);
+    }
+
     @include media(xs) {
       font-size: vie(8, xs);
     }
@@ -220,6 +258,10 @@
   &__descr {
     font-size: vie(16, xl);
     margin-bottom: vie(20, xl);
+
+    @include media(sm) {
+      font-size: vie(12, sm);
+    }
 
     @include media(xs) {
       font-size: vie(8, xs);

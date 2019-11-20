@@ -16,6 +16,9 @@
     background-color: #fff;
     transform: translate(-50%, -50%);
     border-radius: vie(20, xl);
+    @include media(sm) {
+      width: 90vw;
+    }
 
     @include media(xs) {
       width: 90vw;
@@ -58,6 +61,10 @@
     display: block;
     font-size: vie(22, xl);
 
+    @include media(sm) {
+      font-size: vie(16, sm);
+    }
+
     @include media(xs) {
       font-size: vie(16, xs);
     }
@@ -72,6 +79,11 @@
     padding-right: vie(40, xl);
     padding-bottom: vie(18, xl);
 
+    @include media(sm) {
+      padding-top: vie(15, sm);
+      padding-bottom: vie(15, sm);
+    }
+
     @include media(xs) {
       padding-top: vie(15, xs);
       padding-bottom: vie(15, xs);
@@ -82,6 +94,10 @@
     display: flex;
     margin-top: auto;
     justify-content: center;
+
+    @include media(sm) {
+      margin-bottom: vie(10, sm);
+    }
 
     @include media(xs) {
       margin-bottom: vie(10, xs);
@@ -98,6 +114,11 @@
     border: vie(2, xl) solid #d3d3d3;
     cursor: pointer;
     @include trs();
+
+    @include media(xs) {
+      width: vie(80, sm);
+      height: vie(20, sm);
+    }
 
     @include media(xs) {
       width: vie(80, xs);
@@ -130,6 +151,10 @@
     font-family: $gsb;
     @include trs();
 
+    @include media(sm) {
+      font-size: vie(10, sm);
+    }
+
     @include media(xs) {
       font-size: vie(10, xs);
     }
@@ -157,6 +182,11 @@
   }
 
   &__reply {
+    @include media(sm) {
+      margin-top: 0;
+      width: vie(80, sm);
+      height: vie(15, sm);
+    }
     @include media(xs) {
       margin-top: 0;
       width: vie(80, xs);
@@ -172,8 +202,11 @@
   &__image-wrap {
     width: 100%;
     margin-bottom: vie(15, xl);
+    @include media(sm) {
+      margin-bottom: vie(30, sm);
+    }
     @include media(xs) {
-      margin-bottom: vie(30, xl);
+      margin-bottom: vie(30, xs);
     }
 
     img {
@@ -181,6 +214,11 @@
       display: block;
       max-height: vie(250, xl);
       max-width: vie(480, xl);
+
+      @include media(sm) {
+        max-width: vie(280, sm);
+        max-height: vie(100, sm);
+      }
 
       @include media(xs) {
         max-width: vie(280, xs);
@@ -192,6 +230,11 @@
 
   &__continue {
     display: none;
+    @include media(sm) {
+      margin-top: 0;
+      width: vie(80, sm);
+      height: vie(15, sm);
+    }
     @include media(xs) {
       margin-top: 0;
       width: vie(80, xs);
@@ -215,6 +258,9 @@
   max-width: vie(350, xl);
   display: flex;
   justify-content: center;
+  @include media(sm) {
+    max-width: vie(320, sm);
+  }
 
   @include media(xs) {
     max-width: vie(320, xs);
@@ -241,6 +287,10 @@
   color: #09a210;
   margin-bottom: 20px;
 
+  @include media(sm) {
+    font-size: vie(15, sm);
+  }
+
   @include media(xs) {
     font-size: vie(15, xs);
   }
@@ -249,6 +299,10 @@
 .is-correct-text {
   font-size: vie(26, xl);
   color: #4b4b4b;
+
+  @include media(sm) {
+    font-size: vie(12, sm);
+  }
 
   @include media(xs) {
     font-size: vie(12, xs);
@@ -261,6 +315,9 @@
   font-family: $gsb;
   color:red;
   margin-bottom: 20px;
+  @include media(sm) {
+    font-size: vie(15, sm);
+  }
 
   @include media(xs) {
     font-size: vie(15, xs);
@@ -282,6 +339,10 @@
   font-weight: 500;
   color: #000;
 
+  @include media(sm) {
+    font-size: vie(12, sm);
+  }
+
   @include media(xs) {
     font-size: vie(12, xs);
   }
@@ -295,12 +356,20 @@
   color: #1a64a9;
   margin-bottom: vie(22, xl);
 
+  @include media(sm) {
+    font-size: vie(15, sm);
+  }
+
   @include media(xs) {
     font-size: vie(15, xs);
   }
 
   strong {
     font-size: vie(40, xl);
+
+    @include media(sm) {
+      font-size: vie(17, sm);
+    }
 
     @include media(xs) {
       font-size: vie(17, xs);
@@ -315,6 +384,10 @@
   border: vie(4, xl) solid #e8e8e8;
   padding: vie(25, xl) vie(30, xl) vie(35, xl) vie(30, xl);
   margin-bottom: vie(22, xl);
+
+  @include media(sm) {
+    font-size: vie(12, sm);
+  }
 
   @include media(xs) {
     font-size: vie(12, xs);
@@ -334,6 +407,10 @@
   margin-bottom: vie(15, xl);
   display: block;
 
+  @include media(sm) {
+    font-size: vie(12, sm);
+  }
+
   @include media(xs) {
     font-size: vie(12, xs);
   }
@@ -349,6 +426,11 @@
   margin-right: vie(25, xl);
   width: vie(30, xl);
   height: vie(30, xl);
+
+  @include media(sm) {
+    width: vie(15, sm);
+    height: vie(15, sm);
+  }
 
   @include media(xs) {
     width: vie(15, xs);
@@ -373,6 +455,10 @@
     opacity: 0.7;
   }
 
+  @include media(sm) {
+    width: 100%;
+  }
+
   @include media(xs) {
     width: 100%;
   }
@@ -386,6 +472,11 @@
   position: absolute;
   right: vie(-150, xl);
   top: vie(-70, xl);
+
+  @include media(sm) {
+    right: vie(20, sm);
+    font-size: vie(10, sm) !important;
+  }
 
   @include media(xs) {
     right: vie(20, xs);

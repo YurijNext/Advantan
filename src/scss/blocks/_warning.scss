@@ -17,6 +17,10 @@
     font-size: vie(15, xl);
     color:  #727272;
 
+    @include media(sm) {
+      font-size: vie(10, sm);
+    }
+
     @include media(xs) {
       font-size: vie(10, xs);
     }

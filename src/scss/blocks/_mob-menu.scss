@@ -1,5 +1,4 @@
 .mobile-menu {
-  width: vie(180, xs);
   height: 0;
   visibility: hidden;
   position: absolute;
@@ -10,24 +9,48 @@
   opacity: 0;
   transition: all .3s ease-in-out;
 
+  @include media(sm) {
+    width: vie(250, sm);
+  }
+
+  @include media(xs) {
+    width: vie(180, xs);
+  }
+
   &__list {
     border-bottom: 1px solid #5396e4;
   }
 
   &__item {
-    margin-bottom: vie(22, xs);
+    @include media(sm) {
+      margin-bottom: vie(22, sm);
+    }
+    @include media(xs) {
+      margin-bottom: vie(22, xs);
+    }
+
   }
 
   &__link {
-    font-size: vie(22, xs);
     font-family: $gsb;
-    padding-left: vie(18, xs);
     color: #fff;
     display: block;
     position: relative;
     text-decoration: none;
     opacity: 1;
     @include trs();
+
+    @include media(sm) {
+      font-size: vie(25, sm);
+      padding-left: vie(22, sm);
+    }
+
+    @include media(xs) {
+      font-size: vie(22, xs);
+      padding-left: vie(18, xs);
+    }
+
+
 
     &:before {
       @include pseudo();
@@ -47,10 +70,19 @@
 
   &__socials-text {
     display: block;
-    font-size: vie(16, xs);
     color: #fff;
-    margin-bottom: vie(20, xs);
-    margin-top: vie(20, xs);
+
+    @include media(sm) {
+      margin-bottom: vie(20, sm);
+      margin-top: vie(20, sm);
+      font-size: vie(16, sm);
+    }
+
+    @include media(xs) {
+      margin-bottom: vie(20, xs);
+      margin-top: vie(20, xs);
+      font-size: vie(16, xs);
+    }
   }
 
   &__socials-list {
@@ -58,7 +90,13 @@
   }
 
   &__socials-item {
-    margin-right: vie(30, xs);
+    @include media(sm) {
+      margin-right: vie(30, sm);
+    }
+
+    @include media(xs) {
+      margin-right: vie(30, xs);
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -66,8 +104,16 @@
 
   &__socials-link {
     display: block;
-    width: vie(25, xs);
-    height: vie(25, xs);
+
+    @include media(sm) {
+      width: vie(25, sm);
+      height: vie(25, sm);
+    }
+
+    @include media(xs) {
+      width: vie(25, xs);
+      height: vie(25, xs);
+    }
   }
 
   &__socilas-svg {

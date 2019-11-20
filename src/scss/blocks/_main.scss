@@ -5,22 +5,22 @@
   background-position: left top;
   padding-bottom: vie(30, xl);
 
+  @include media(sm) {
+    padding-top: vie(170, sm);
+    background-size: 130vw vie(300, sm) ;
+  }
+
   @include media(xs) {
     padding-top: vie(170, xs);
     background-size: 170vw vie(300, xs) ;
   }
 
-  @include media(sm) {
-    padding-top: vie(170, sm);
-    background-size: 170vw vie(300, sm) ;
-  }
-
   &__container {
-    @include media(xs) {
+    @include media(sm) {
       display: flex;
       flex-direction: column;
     }
-    @include media(sm) {
+    @include media(xs) {
       display: flex;
       flex-direction: column;
     }
@@ -28,12 +28,11 @@
 
   &__icon {
     width: vie(74, xl);
-
+    @include media(sm) {
+      width: vie(90, sm);
+    }
     @include media(xs) {
       width: vie(58, xs);
-    }
-    @include media(sm) {
-      width: vie(58, sm);
     }
   }
 
@@ -43,28 +42,28 @@
     display: flex;
     flex-direction: column;
     margin-left: auto;
-
-    @include media(xs) {
-      order: 2;
-      width: 100%;
-    }
     @include media(sm) {
       order: 2;
       width: 100%;
     }
+    @include media(xs) {
+      order: 2;
+      width: 100%;
+    }
+
   }
 
   &__product-list {
     display: flex;
     margin-bottom: vie(69, xl);
     justify-content: space-between;
-
-    @include media(xs) {
-      order: 2;
-    }
     @include media(sm) {
       order: 2;
     }
+    @include media(xs) {
+      order: 2;
+    }
+
   }
 
   &__product-item {
@@ -73,13 +72,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-
+    @include media(sm) {
+      width: vie(200, sm);
+    }
     @include media(xs) {
       width: vie(90, xs);
     }
-    @include media(sm) {
-      width: vie(90, sm);
-    }
+
   }
 
   &__product-features {
@@ -88,21 +87,27 @@
     font-family: $geb;
     font-size: vie(18, xl);
     color: $accent;
-
+    @include media(sm) {
+      font-size: vie(20, sm);
+      line-height: vie(18, sm);
+    }
     @include media(xs) {
       font-size: vie(16, xs);
       line-height: vie(14, xs);
     }
-    @include media(sm) {
-      font-size: vie(16, sm);
-      line-height: vie(14, sm);
-    }
+
   }
 
   &__product-photo-wrap {
     width: 100%;
     text-align: right;
-
+    @include media(sm) {
+      order: 1;
+      width: vie(270, xs);
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: vie(22, sm);
+    }
     @include media(xs) {
       order: 1;
       width: vie(270, xs);
@@ -111,13 +116,7 @@
       margin-bottom: vie(22, xs);
     }
 
-    @include media(sm) {
-      order: 1;
-      width: vie(270, xs);
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: vie(22, sm);
-    }
+
   }
 
   &__product-photo {
@@ -127,13 +126,13 @@
   &__product-title {
     font-size: vie(13, xl);
     color: $blueLight;
-
-    @include media(xs) {
-      font-size: vie(11, xs);
-    }
     @include media(sm) {
       font-size: vie(11, sm);
     }
+    @include media(xs) {
+      font-size: vie(11, xs);
+    }
+
   }
 
   &__text-wrap {
@@ -141,27 +140,28 @@
     display: flex;
     justify-content: space-between;
     margin-top: vie(55, xl);
-
-    @include media(xs) {
-      order: 1;
-
-    }
     @include media(sm) {
       order: 1;
 
     }
+    @include media(xs) {
+      order: 1;
+
+    }
+
   }
 
   &__link-wrap {
     display: flex;
     align-items: center;
     max-width: vie(340, xl);
-    @include media(xs) {
-      display: none;
-    }
     @include media(sm) {
       display: none;
     }
+    @include media(xs) {
+      display: none;
+    }
+
   }
 
   &__link {
@@ -177,14 +177,15 @@
     max-width: vie(695, xl);
     margin-left: auto;
     margin-right: vie(35, xl);
-    @include media(xs) {
-      margin: 0 auto;
-      max-width: 100%;
-    }
     @include media(sm) {
       margin: 0 auto;
       max-width: 100%;
     }
+    @include media(xs) {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
   }
 
   &__fact-title {
@@ -193,14 +194,16 @@
     line-height: vie(36, xl);
     margin-bottom: vie(20, xl);
     color: $blueBolder;
-    @include media(xs) {
-      font-size: vie(25, xs);
-      line-height: vie(28, xs);
-    }
+
     @include media(sm) {
       font-size: vie(25, sm);
       line-height: vie(28, sm);
     }
+    @include media(xs) {
+      font-size: vie(25, xs);
+      line-height: vie(28, xs);
+    }
+
   }
 
   &__fact-descr {
@@ -208,16 +211,17 @@
     font-size: vie(18, xl);
     color: $blueBolder;
     font-weight: 400;
-    @include media(xs) {
-      font-size: vie(14, xs);
-      line-height: vie(17, xs);
-
-    }
     @include media(sm) {
       font-size: vie(14, sm);
       line-height: vie(17, sm);
 
     }
+    @include media(xs) {
+      font-size: vie(14, xs);
+      line-height: vie(17, xs);
+
+    }
+
   }
 
   &__play-button {
