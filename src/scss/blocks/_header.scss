@@ -9,6 +9,9 @@
   @include media(xs) {
     height: vie(55, xs);
   }
+  @include media(sm) {
+    height: vie(55, sm);
+  }
 
   &__wrap {
     display: flex;
@@ -24,11 +27,19 @@
       width: vie(162, xs);
       margin-right: 0;
     }
+
+    @include media(sm) {
+      width: vie(162, sm);
+      margin-right: 0;
+    }
   }
 
   &__nav {
     height: 100%;
     @include media(xs) {
+      display: none;
+    }
+    @include media(sm) {
       display: none;
     }
   }
@@ -62,6 +73,18 @@
     &:hover {
       border-bottom: vie(5, xl) solid #53d4f2;
     }
+
+    @include media(xs) {
+      &--active {
+        border-bottom: none;
+      }
+    }
+
+    @include media(sm) {
+      &--active {
+        border-bottom: none;
+      }
+    }
   }
   
   &__socials {
@@ -70,6 +93,9 @@
     position: relative;
     z-index: 3;
     @include media(xs) {
+      display: none;
+    }
+    @include media(sm) {
       display: none;
     }
   }
@@ -107,6 +133,9 @@
     @include media(xs) {
       display: none;
     }
+    @include media(sm) {
+      display: none;
+    }
   }
 
   &__humburger {
@@ -116,6 +145,14 @@
     }
 
     @include media(xs) {
+      display: block;
+      position: absolute;
+      right: 0;
+      height: 100%;
+
+    }
+
+    @include media(sm) {
       display: block;
       position: absolute;
       right: 0;

@@ -57,6 +57,10 @@
   cursor: pointer;
   opacity: 1;
 
+  @include media(xs) {
+    font-size: vie(10, xs);
+  }
+
   &:hover {
     opacity: 0.7;
   }

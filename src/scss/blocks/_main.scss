@@ -10,8 +10,17 @@
     background-size: 170vw vie(300, xs) ;
   }
 
+  @include media(sm) {
+    padding-top: vie(170, sm);
+    background-size: 170vw vie(300, sm) ;
+  }
+
   &__container {
     @include media(xs) {
+      display: flex;
+      flex-direction: column;
+    }
+    @include media(sm) {
       display: flex;
       flex-direction: column;
     }
@@ -22,6 +31,9 @@
 
     @include media(xs) {
       width: vie(58, xs);
+    }
+    @include media(sm) {
+      width: vie(58, sm);
     }
   }
 
@@ -36,6 +48,10 @@
       order: 2;
       width: 100%;
     }
+    @include media(sm) {
+      order: 2;
+      width: 100%;
+    }
   }
 
   &__product-list {
@@ -44,6 +60,9 @@
     justify-content: space-between;
 
     @include media(xs) {
+      order: 2;
+    }
+    @include media(sm) {
       order: 2;
     }
   }
@@ -58,6 +77,9 @@
     @include media(xs) {
       width: vie(90, xs);
     }
+    @include media(sm) {
+      width: vie(90, sm);
+    }
   }
 
   &__product-features {
@@ -70,6 +92,10 @@
     @include media(xs) {
       font-size: vie(16, xs);
       line-height: vie(14, xs);
+    }
+    @include media(sm) {
+      font-size: vie(16, sm);
+      line-height: vie(14, sm);
     }
   }
 
@@ -84,6 +110,14 @@
       text-align: center;
       margin-bottom: vie(22, xs);
     }
+
+    @include media(sm) {
+      order: 1;
+      width: vie(270, xs);
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: vie(22, sm);
+    }
   }
 
   &__product-photo {
@@ -97,6 +131,9 @@
     @include media(xs) {
       font-size: vie(11, xs);
     }
+    @include media(sm) {
+      font-size: vie(11, sm);
+    }
   }
 
   &__text-wrap {
@@ -109,6 +146,10 @@
       order: 1;
 
     }
+    @include media(sm) {
+      order: 1;
+
+    }
   }
 
   &__link-wrap {
@@ -116,6 +157,9 @@
     align-items: center;
     max-width: vie(340, xl);
     @include media(xs) {
+      display: none;
+    }
+    @include media(sm) {
       display: none;
     }
   }
@@ -137,6 +181,10 @@
       margin: 0 auto;
       max-width: 100%;
     }
+    @include media(sm) {
+      margin: 0 auto;
+      max-width: 100%;
+    }
   }
 
   &__fact-title {
@@ -148,6 +196,10 @@
     @include media(xs) {
       font-size: vie(25, xs);
       line-height: vie(28, xs);
+    }
+    @include media(sm) {
+      font-size: vie(25, sm);
+      line-height: vie(28, sm);
     }
   }
 
@@ -161,6 +213,11 @@
       line-height: vie(17, xs);
 
     }
+    @include media(sm) {
+      font-size: vie(14, sm);
+      line-height: vie(17, sm);
+
+    }
   }
 
   &__play-button {
@@ -172,7 +229,8 @@
     border-radius: 3px;
     color: #fff;
     text-align: left;
-    @include media(xs, min) {
+
+    @include media(sm, min) {
       display: none;
     }
   }

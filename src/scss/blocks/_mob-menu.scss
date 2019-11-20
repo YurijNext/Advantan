@@ -79,6 +79,12 @@
 .mobile-menu--active {
   visibility: visible;
   opacity: 1;
-  height: vie(615, xs);
   transition: all .3s ease-in-out;
+
+  @include media(sm) {
+    height: vie(600, sm);
+  }
+  @include media(xs) {
+    height: vie(400, xs);
+  }
 }

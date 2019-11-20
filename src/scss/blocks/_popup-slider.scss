@@ -347,6 +347,13 @@
 
 .test-socials-item {
   margin-right: vie(25, xl);
+  width: vie(30, xl);
+  height: vie(30, xl);
+
+  @include media(xs) {
+    width: vie(15, xs);
+    height: vie(15, xs);
+  }
 
   &:last-child {
     margin-right: 0;
@@ -367,7 +374,7 @@
   }
 
   @include media(xs) {
-    width: vie(20, xs);
+    width: 100%;
   }
 }
 
